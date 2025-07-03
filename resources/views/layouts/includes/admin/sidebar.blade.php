@@ -7,9 +7,27 @@
             'active' => request()->routeIs('admin.dashboard')
         ],
         [
-            'header' => 'Administrar Página',
+            'header' => 'Gestión',
         ],
         [
+            'name' => 'Roles y Permisos',
+            'href' => route('admin.roles.index'),
+            'icon' => 'fa-solid fa-shield-halved',
+            'active' => request()->routeIs('admin.roles.*')
+        ],
+        [
+            'name' => 'Usuarios',
+            'href' => route('admin.users.index'),
+            'icon' => 'fa-solid fa-users',
+            'active' => request()->routeIs('admin.users.*')
+        ],
+        [
+            'name' => 'Pacientes',
+            'href' => route('admin.patients.index'),
+            'icon' => 'fa-solid fa-user-injured',
+            'active' => request()->routeIs('admin.patients.*')
+        ],
+        /*[
             'name' => 'Dashboard',
             'href' => route('admin.dashboard'),
             'icon' => 'fa-solid fa-gauge',
@@ -21,7 +39,7 @@
                    'active' => request()->routeIs('admin.dashboard')
                 ]
             ]
-        ],
+        ],*/
     ];
 @endphp
 
