@@ -39,7 +39,7 @@
         </x-wire-card>
 
         <x-wire-card>
-            
+
         </x-wire-card>
 
     </form>
